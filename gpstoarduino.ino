@@ -2,7 +2,7 @@
 	#include<TinyGPS++.h>  //include tiny GPS library
 	#include <SoftwareSerial.h> // to define additional serial port
 	#include <String.h> //to perform string operations
-	static const int RXPin=3, TXPin=4; // rxPin: the pin on which to receive serial data. txPin: the pin on which to transmit serial data.
+	static const int RXPin=4, TXPin=3; // rxPin: the pin on which to receive serial data. txPin: the pin on which to transmit serial data.
 	static const uint32_t GPSBaud= 9600;
 	String data="";
 	TinyGPSPlus gps; //Create TinyGPS++ object
