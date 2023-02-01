@@ -9,7 +9,8 @@ boolean newData=false;
 
 ESP8266WebServer server(80);
 
-void setup() {
+void setup() {1
+  pinMode(LED_PIN,OUTPUT);
   Serial.begin(115200);
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
@@ -17,6 +18,10 @@ void setup() {
   }
   Serial.print("\n IP address: ");
   Serial.println(WiFi.localIP());
+  digital.Write(LED_PIN,HIGH);
+  delay(1000);
+  digital.Write(LED_PIN,LOW)
+  delay(1000);
   server.on("/", handleRoot);
   //server.on("/data", handleData);
   server.on("/data1", handleData1);
@@ -44,7 +49,7 @@ void handleRoot() {
 }*/
 void handleData1() {
   //int sensorValue = analogRead(A0);
- // String data = String(sensorValue);
+ // String data= String(sensorValue);
   String data1=receivedChars;
   //server.send(200, "text/plain", data);
   server.send(200, "text/plain", data1);
