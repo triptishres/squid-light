@@ -108,6 +108,7 @@ turtle.write("From The Avenue",font=("Times New Roman",15,"bold"))
 
 
 
+#Operation of Traffic Light
 # PriorityTimer
 while True:
     vehicle=VehicleLatLon()
