@@ -1,9 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
 
+
+#Function to get vehicle's coordinates from the local host
 def VehicleLatLon():
     driver=webdriver.Chrome()
     driver.get('http://192.168.228.217/')
@@ -18,15 +17,3 @@ def VehicleLatLon():
     driver.close()
 
     return b
-
-
-
-
-# print(lat)
-# print(long)
-# print(lat,long)
-    
-
-# driver.close()
-
-

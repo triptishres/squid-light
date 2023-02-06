@@ -107,28 +107,6 @@ turtle.write("From The Avenue",font=("Times New Roman",15,"bold"))
 
 
 
-# Operation of Normal Timer
-# normalTimer:
-
-def normalTimer():
-    while True:
-        tl1.changetoGreen()
-        tl2.changetoGreen()
-        time.sleep(4)
-        tl1.changetoYellow()
-        time.sleep(2)
-        tl1.changetoRed()
-        time.sleep(2)
-        tl2.changetoYellow()
-        time.sleep(2)
-        tl2.changetoRed()
-        tl3.changetoGreen()
-        time.sleep(4)
-        tl3.changetoYellow()
-        time.sleep(2)
-        tl3.changetoRed()
-
-# normalTimer()
 
 # PriorityTimer
 while True:
@@ -165,99 +143,5 @@ while True:
         tl3.changetoYellow()
         time.sleep(2)
         tl3.changetoRed()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# tl1.changetoGreen()
-# time.sleep(10)
-# tl1.changetoYellow()
-# time.sleep(4)
-# tl1.changetoRed()
-
-
-
-
-
-        
-
-
-
-
-# class TrafficLight:
-#     #Traffic Light Box
-#     pen = turtle.Turtle()
-#     pen.color("white")
-#     pen.width(3)
-#     pen.hideturtle() #makes the turtle invisible
-#     pen.penup() #doesn't draw when moving
-#     pen.goto(-30,75) #pen goes to -30 x coordinate and 60 y coordinate
-#     pen.pendown()#starts drawing
-#     pen.fd(60) #fd(60) moves the pen forward by 60 pixels
-#     pen.rt(90) #rt(90) turns the pen by 90 degrees
-#     pen.fd(150) 
-#     pen.rt(90)
-#     pen.fd(60)
-#     pen.rt(90)
-#     pen.fd(150)
-
-#     #Making a Red Light
-#     redLight=turtle.Turtle()
-#     redLight.shape("circle")
-#     redLight.shapesize(1,1,15)
-#     redLight.color("grey")
-#     redLight.penup()
-#     redLight.goto(0,50)
-#     redLight.pendown()
-
-#     #Making a Yellow Light
-#     yellowLight=turtle.Turtle()
-#     yellowLight.shape("circle")
-#     yellowLight.shapesize(1,1,15)
-#     yellowLight.color("grey")
-
-#     #Making a Green Light
-#     greenLight=turtle.Turtle()
-#     greenLight.shape("circle")
-#     greenLight.shapesize(1,1,15)
-#     greenLight.color("grey")
-#     greenLight.penup()
-#     greenLight.goto(0,-50)
-#     greenLight.pendown()
-
-#     # turtle.hideturtle()
-#     # turtle.penup()
-#     # turtle.goto(-60,-120)
-#     # turtle.color("white")
-#     # turtle.write("Traffic Light 1",font=("Times New Roman",15,"bold"))
-
-# tl1=TrafficLight
-# tl2=TrafficLight
-
-# waitSec=int(input("Enter wait seconds: "))
-# if waitSec>20:
-#     tl1.redLight.color("red")
-#     time.sleep(2)
-#     tl1.redLight.color("grey")
-#     tl1.greenLight.color("green")
-# else:
-#     tl1.redLight.color("red")
-
-# if tl1.greenLight.pencolor()=="green":
-#     print("Stop at other ligths.")
-
 
 winobj.mainloop() #to keep the window open
