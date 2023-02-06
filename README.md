@@ -14,4 +14,4 @@ When the vehicle approaches the traffic light, it will connect to the WIFI netwo
 
 # System Design 
 
-The coding for backend was done in C+ and the frontend was done in the python. 
+The coding for backend was done in C+ and the frontend was done in the Python language.
