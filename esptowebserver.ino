@@ -40,13 +40,6 @@ void handleRoot() {
   server.send(200, "text/html", "<html><body><h1>Sensor Data</h1><p>Note: <span id='data1'></span></p><script>setInterval(() => {fetch('/data1').then(response => response.text()).then(data1 => {document.getElementById('data1').innerHTML = data1;});},2000 );</script></body></html>");
 }
 
-/* void handleData() {
-  int sensorValue = analogRead(A0);
-  String data = String(sensorValue);
- // String data1="This is Testing data send to server";
-  server.send(200, "text/plain", data);
-  //server.send(200, "text/plain", data1);
-}*/
 void handleData1() {
   //int sensorValue = analogRead(A0);
  // String data= String(sensorValue);
