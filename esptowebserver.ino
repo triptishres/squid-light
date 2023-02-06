@@ -23,7 +23,6 @@ void setup() {1
   digital.Write(LED_PIN,LOW)
   delay(1000);
   server.on("/", handleRoot);
-  //server.on("/data", handleData);
   server.on("/data1", handleData1);
   server.begin();
 }
@@ -41,11 +40,8 @@ void handleRoot() {
 }
 
 void handleData1() {
-  //int sensorValue = analogRead(A0);
- // String data= String(sensorValue);
-  String data1=receivedChars;
-  //server.send(200, "text/plain", data);
-  server.send(200, "text/plain", data1);
+    String data1=receivedChars;
+    server.send(200, "text/plain", data1);
 }
 void recvWithStartEndMarkers(){
   static boolean recvInProgress=false;
